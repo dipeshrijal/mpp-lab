@@ -10,13 +10,12 @@ public class ForEachExample {
 		List<String> list = Arrays.asList("Hello there", "Goodbye", "Back soon", "Away", "On Vacation",
 				"Everywhere you want to be");
 
-		Consumer<String> consumer = new Consumer<String>() {
-			@Override
-			public void accept(String t) {
-				System.out.println(t.toUpperCase());
-			};
-		};
-
-		list.forEach(consumer);
+		list.forEach(new upperCaseConsumer());
+	}
+	
+	static class upperCaseConsumer implements Consumer<String> {
+		public void accept(String s) {
+			System.out.println(s.toUpperCase());
+		}
 	}
 }
