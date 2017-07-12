@@ -1,0 +1,25 @@
+package problem3;
+
+public class RedheadDuck extends Duck {
+
+	public RedheadDuck() {
+		
+	}
+
+	@Override
+	public void display() {
+		System.out.println("Display RedheadDuck");
+	}
+
+	@Override
+	public void quack() {
+		quack();
+	}
+
+	@Override
+	public void fly() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

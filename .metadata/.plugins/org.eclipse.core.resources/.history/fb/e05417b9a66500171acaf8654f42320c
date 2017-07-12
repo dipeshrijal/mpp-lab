@@ -1,0 +1,6 @@
+package problem3soln;
+
+public interface QuackBehavior {
+	public void quack();
+
+}

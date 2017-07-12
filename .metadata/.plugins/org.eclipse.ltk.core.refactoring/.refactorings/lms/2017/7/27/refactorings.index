@@ -1,0 +1,10 @@
+1499210008669	Move compilation unit
+1499210071571	Move compilation unit
+1499227535913	Move compilation unit
+1499227990952	Move file
+1499288096267	Delete element
+1499288665331	Encapsulate field 'id'
+1499289003601	Encapsulate field 'copies'
+1499289515533	Encapsulate field 'bookCopy'
+1499289614105	Encapsulate field 'book'
+1499289742592	Encapsulate field 'numOfCopies'

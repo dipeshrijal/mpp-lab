@@ -1,0 +1,17 @@
+package problem3;
+
+public class DecoyDuck extends Duck implements CannotFly, MuteQuack {
+
+	public DecoyDuck() {
+//		cannotFly = new CannotFly();
+//		muteQuack = new MuteQuack();
+//		setFlyBehaviour(cannotFly);
+//		setQuackBehavior(muteQuack);
+	}
+
+	@Override
+	public void display() {
+		System.out.println("Display decoy duck");
+	}
+
+}

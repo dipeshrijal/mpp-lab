@@ -1,0 +1,60 @@
+package classwork;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+public class City {
+
+	private String cname;
+	private long population; // in millions
+
+	public City(String cname, long population) {
+		super();
+		this.cname = cname;
+		this.population = population;
+	}
+
+	@Override
+	public String toString() {
+		return "City [cname=" + cname + ", population=" + population + "]";
+	}
+
+	public String getCname() {
+		return cname;
+	}
+
+	public void setCname(String cname) {
+		this.cname = cname;
+	}
+
+	public long getPopulation() {
+		return population;
+	}
+
+	public void setPopulation(long population) {
+		this.population = population;
+	}
+	
+	
+	public Comparator<City> NC = new Comparator<City>() {
+		@Override
+		public int compare(City o1, City o2) {
+			String x = o1.getCname();
+			String y = o2.getCname();
+			
+			return x.compareTo(y);
+		}
+		
+	};
+
+	public static void main(String[] args) { 
+		List<City> list = new ArrayList<>();
+		
+		list.add(new City("LA", 20000));
+		list.add(new City("IA", 1000));
+		list.add(new City("NC", 35000));
+		list.add(new City("NY", 45000));
+	}
+
+}

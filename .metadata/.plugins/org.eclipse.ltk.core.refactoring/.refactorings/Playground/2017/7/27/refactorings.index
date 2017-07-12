@@ -1,0 +1,7 @@
+1499051326896	Encapsulate field 'accountNumber'
+1499051334090	Encapsulate field 'currentAmount'
+1499051527770	Encapsulate field 'accountList'
+1499051737451	Encapsulate field 'InterestRate'
+1499051952091	Encapsulate field 'interestRate'
+1499053043505	Encapsulate field 'interestRate'
+1499055446739	Rename package 'FactoryPattern'

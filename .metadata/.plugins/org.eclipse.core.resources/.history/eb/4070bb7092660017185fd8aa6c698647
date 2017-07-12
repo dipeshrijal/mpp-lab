@@ -1,0 +1,38 @@
+package problem3;
+
+public abstract class Duck implements FlyBehaviour, QuackBehavior {
+
+	private FlyBehaviour flyBehaviour;
+	private QuackBehavior quackBehaviour;
+
+	public void swim() {
+		System.out.println("swimmimg");
+	}
+	
+	public void fly() {
+		flyBehaviour.fly();
+	}
+	
+	public void quack() {
+		quackBehaviour.quack();
+	}
+
+	public abstract void display();
+
+	public FlyBehaviour getFlyBehaviour() {
+		return flyBehaviour;
+	}
+
+	public void setFlyBehaviour(FlyBehaviour flyBehaviour) {
+		this.flyBehaviour = flyBehaviour;
+	}
+
+	public QuackBehavior getQuackBehaviour() {
+		return quackBehaviour;
+	}
+
+	public void setQuackBehaviour(QuackBehavior quackBehaviour) {
+		this.quackBehaviour = quackBehaviour;
+	}
+
+}

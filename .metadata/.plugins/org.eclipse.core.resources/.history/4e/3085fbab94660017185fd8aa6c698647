@@ -1,0 +1,16 @@
+package problem3;
+
+public class DecoyDuck extends Duck {
+
+	private CannotFly cannotFly;
+	private MuteQuack muteQuack;
+
+	public DecoyDuck() {
+	}
+
+	@Override
+	public void display() {
+		System.out.println("Display decoy duck");
+	}
+
+}

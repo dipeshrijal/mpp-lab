@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;hrApplication.Order.orderAmount&apos; in &apos;hrApplication.Order&apos;&#x0A;- Original project: &apos;Lab4&apos;&#x0A;- Original element: &apos;hrApplication.Order.orderAmount&apos;&#x0A;- Getter method name: &apos;getOrderAmount&apos;&#x0A;- Setter method name: &apos;setOrderAmount&apos;&#x0A;- Field visibility: &apos;public&apos;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;orderAmount&apos;" flags="589830" getter="getOrderAmount" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;hrApplication{Order.java[Order^orderAmount" insertion="-1" setter="setOrderAmount" stamp="1498797526944" version="1.0" visibility="1"/>
+</session>

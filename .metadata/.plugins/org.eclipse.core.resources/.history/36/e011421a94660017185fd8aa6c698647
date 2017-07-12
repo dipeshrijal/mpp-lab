@@ -1,0 +1,11 @@
+package problem3;
+
+public interface FlyBehaviour {
+
+	public void fly();
+	
+	public void cannotFly() {
+		System.out.println("cannot fly");
+	}
+
+}

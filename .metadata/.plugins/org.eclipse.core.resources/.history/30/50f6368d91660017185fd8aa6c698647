@@ -1,0 +1,20 @@
+package problem3;
+
+public abstract class Duck implements FlyBehaviour, QuackBehavior {
+
+
+	public void swim() {
+		System.out.println("swimmimg");
+	}
+	
+	public void fly() {
+		
+	}
+	
+	public void quack() {
+		
+	}
+
+	public abstract void display();
+
+}

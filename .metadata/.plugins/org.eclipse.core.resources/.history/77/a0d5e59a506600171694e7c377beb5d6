@@ -1,0 +1,12 @@
+package classwork;
+
+@FunctionalInterface
+interface Circle {
+	
+	double area(double r);
+	
+}
+
+public class Test {
+
+}

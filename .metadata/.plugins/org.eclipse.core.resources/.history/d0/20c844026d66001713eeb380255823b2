@@ -1,0 +1,58 @@
+package hrApplication;
+
+public abstract class Employee {
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 17;
+		result = prime * result + empId;
+		result = prime * result + ((paycheck == null) ? 0 : paycheck.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee other = (Employee) obj;
+		if (empId != other.empId)
+			return false;
+		if (paycheck == null) {
+			if (other.paycheck != null)
+				return false;
+		} else if (!paycheck.equals(other.paycheck))
+			return false;
+		return true;
+	}
+
+	private int empId;
+	private Paycheck paycheck;
+	
+	public int getEmpId() {
+		return empId;
+	}
+
+	public Paycheck getPaycheck() {
+		return paycheck;
+	}
+
+	public Employee(int empId) {
+		this.empId = empId;
+	}
+	
+	public void print() {
+		calcCompensation(12, 12);
+		
+	}
+	
+	public Paycheck calcCompensation(int aMonth, int aYear) {
+		return new Paycheck(calcGrossPay());
+	}
+	
+	public abstract double calcGrossPay();
+
+}

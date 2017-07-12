@@ -1,0 +1,22 @@
+package classwork;
+
+@FunctionalInterface
+interface Circle {
+
+	double area(double r);
+
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		
+		Circle circle = (r) -> Math.PI * Math.pow(r, 2);
+		
+		
+		System.out.println(circle.area(5.5));
+
+	}
+
+}

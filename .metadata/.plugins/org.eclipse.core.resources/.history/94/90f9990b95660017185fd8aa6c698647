@@ -1,0 +1,17 @@
+package problem3;
+
+public class RedheadDuck extends Duck {
+
+	private FlyWithWings flyWithWings;
+	private Quack quack;
+
+	public RedheadDuck() {
+		
+	}
+
+	@Override
+	public void display() {
+		System.out.println("Display RedheadDuck");
+	}
+
+}

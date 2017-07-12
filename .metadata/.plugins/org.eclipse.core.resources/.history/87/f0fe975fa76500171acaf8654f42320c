@@ -1,0 +1,9 @@
+package problem3;
+
+public interface MuteQuack {
+
+	public void quack() {
+		System.out.println("cannot quack");
+	}
+
+}

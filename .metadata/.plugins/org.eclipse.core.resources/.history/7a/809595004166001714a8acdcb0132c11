@@ -1,0 +1,11 @@
+package problem3;
+
+public class MallardDuck extends Duck implements FlyWithWings, Quack {
+
+	private FlyWithWings flyWithWings;
+	private Quack quack;
+
+	public MallardDuck() {
+	}
+
+}

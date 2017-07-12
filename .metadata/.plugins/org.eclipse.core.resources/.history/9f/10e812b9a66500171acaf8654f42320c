@@ -1,0 +1,7 @@
+package problem3soln;
+
+public interface FlyBehaviour {
+
+	public void fly();
+
+}

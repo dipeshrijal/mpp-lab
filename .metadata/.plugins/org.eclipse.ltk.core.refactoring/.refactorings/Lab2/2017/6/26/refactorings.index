@@ -1,0 +1,8 @@
+1498603816994	Encapsulate field 'lineNo'
+1498603822698	Encapsulate field 'price'
+1498603828636	Encapsulate field 'quantity'
+1498603834966	Encapsulate field 'order'
+1498615978951	Move compilation units
+1498615992543	Move compilation unit
+1498621031379	Delete element
+1498621277173	Encapsulate field 'orderline'
