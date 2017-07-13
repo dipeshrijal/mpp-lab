@@ -1,7 +1,6 @@
 package labs.problem4.e;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 import labs.problem4.Product;
@@ -17,7 +16,7 @@ public class Main {
 
 		List<Product> products = Arrays.asList(p1, p2, p3, p4);
 
-		Collections.sort(products, (x, y) -> {
+		products.sort((x, y) -> {
 			if (x.getTitle().compareTo(y.getTitle()) == 0) {
 				if (x.getPrice() == y.getPrice())
 					return 0;

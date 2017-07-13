@@ -1,7 +1,6 @@
 package labs.problem4.d;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 import labs.problem4.Product;
@@ -15,7 +14,7 @@ public class Main {
 
 		List<Product> products = Arrays.asList(p1, p2, p3);
 		
-		Collections.sort(products, (x, y) -> y.getTitle().compareTo(x.getTitle()));
+		products.sort((x, y) -> y.getTitle().compareTo(x.getTitle()));
 		
 		products.forEach(System.out::println);
 	}
