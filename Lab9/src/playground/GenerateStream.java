@@ -17,7 +17,7 @@ public class GenerateStream {
 		
 		// Iterate Stream
 		
-//		Stream<Long> naturalNumbers = Stream.iterate(1L, n -> n + 1).limit(10).forEach(System.out::println);
+		Stream.iterate(1L, n -> n + 1).skip(5).limit(10).forEach(System.out::println);
 	}
 
 }

@@ -15,13 +15,13 @@ public class SquareValueOfOdd {
 		System.out.println(sum);
 
 		// using streamOf
-		
+
 		Stream<Integer> nums = Stream.of(1, 2, 3, 4, 5, 6);
 
 		int total = nums.filter(n -> n % 2 == 1).map(n -> n * n).reduce(0, Integer::sum);
 
 		System.out.println(total);
-		
+
 		// or can be used inline
 
 		int total1 = Stream.of(1, 2, 3, 4, 5, 6).filter(n -> n % 2 == 1).map(n -> n * n).reduce(0, Integer::sum);

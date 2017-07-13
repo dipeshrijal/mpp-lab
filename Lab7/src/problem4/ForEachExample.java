@@ -12,7 +12,7 @@ public class ForEachExample {
 
 		list.forEach(new upperCaseConsumer());
 	}
-	
+
 	static class upperCaseConsumer implements Consumer<String> {
 		public void accept(String s) {
 			System.out.println(s.toUpperCase());
