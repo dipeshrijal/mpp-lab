@@ -2,58 +2,9 @@ package labs.problem10;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BiFunction;
+import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-class Human {
-	String name;
-	int age;
-	String gender;
-
-	public Human(String name) {
-		this.name = name;
-	}
-
-	public Human(String name, int age) {
-		this.name = name;
-		this.age = age;
-	}
-
-	public Human(String name, int age, String gender) {
-		this.name = name;
-		this.age = age;
-		this.gender = gender;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public String getGender() {
-		return gender;
-	}
-
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
-
-	@Override
-	public String toString() {
-		return "Human [name=" + name + ", age=" + age + ", gender=" + gender + "]";
-	}
-}
 
 public class ConstructorReference {
 	public static void main(String args[]) {
@@ -63,39 +14,50 @@ public class ConstructorReference {
 
 		System.out.println("------------------------------Male---------------------------\n");
 
-		Arrays.stream(list).filter(human -> human.getGender() == "Male").collect(Collectors.toList())
-				.forEach(System.out::println);
+		Arrays.stream(list).filter(human -> human.getGender().equals("Male")).forEach(System.out::println);
 
 		// Query 2 : add some more objects to the list, and print the count of female
 		// candidates whose age is greater than 30
 
-		Human[] list1 = { new Human("Dipesh", 26, "Male"), new Human("Alien", 45, "Female"),
-				new Human("Amina", 50, "Female") };
-
-		Stream<Human> h1 = Stream.concat(Arrays.stream(list), Arrays.stream(list1));
+		Human[] list1 = { new Human("Joe", 35, "Male"), new Human("Jane", 45, "Female"), new Human("John", 30, "Male"),
+				new Human("Dipesh", 26, "Male"), new Human("Alien", 45, "Female"), new Human("Amina", 50, "Female") };
 
 		System.out.println("\n-----------------------------Female greater than 30------------\n");
 
-		System.out.println(h1.filter(human -> human.getGender().equals("Female")).filter(human -> human.getAge() > 30)
-				.count());
+		final long total = Arrays.stream(list1).filter(human -> human.getGender().equals("Female"))
+				.filter(human -> human.getAge() > 30).count();
+
+		System.out.println("Total female greater than 30 = " + total);
 
 		// Query 3 : Practice for method reference Classname::new - Cretae an objecy by
 		// choosing suitable Interface to the specified constructors(Totally 3
 		// constuctors) and print the object status
 
+		Function<String, Human> person1 = Human::new;
+		Human p1 = person1.apply("Dipesh");
+		System.out.println("\n single constructor => " + p1 + "\n");
+
+		BiFunction<String, Integer, Human> person2 = Human::new;
+		Human p2 = person2.apply("Dipesh", 26);
+		System.out.println("\n Double constructor => " + p2 + "\n");
+
+		TriFunction<String, Integer, String, Human> person3 = Human::new;
+		Human p3 = person3.apply("Dipesh", 26, "Male");
+		System.out.println("\n Triple constructor => " + p3 + "\n");
+
 		// Query 4 : convert your Human array into ArrayList of Human by creating a
 		// static method, decide your arguments and return type
 
-		Stream<Human> col1 = arrayToCollection(list);
-		System.out.println("\n" + col1);
+		List<Human> col1 = arrayToCollection(list1);
+		col1.forEach(System.out::println);
 	}
 
 	// Implement the body for Query 4
-	public static Stream<Human> arrayToCollection(Human[] list) {
+	public static List<Human> arrayToCollection(Human[] list) {
 
-		Stream<Human> stream1 = Arrays.stream(list);
+		List<Human> humans = Arrays.stream(list).collect(Collectors.toList());
 
-		return stream1;
+		return humans;
 
 	}
 

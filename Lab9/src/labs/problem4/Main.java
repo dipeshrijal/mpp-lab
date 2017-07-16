@@ -11,9 +11,7 @@ public class Main {
 	}
 
 	public static void printSquares(int num) {
-
-		IntStream.rangeClosed(1, num).map(n -> n * n).limit(num).forEach(System.out::println);
-
+		IntStream.iterate(1, n -> n + 1).map(n -> n * n).limit(num).forEach(System.out::println);
 	}
 
 }

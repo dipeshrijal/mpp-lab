@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
-<fullyQualifiedTypeName name="java.io.FileInputStream"/>
-<fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
-<fullyQualifiedTypeName name="dataaccess.DaoImpl"/>
-<fullyQualifiedTypeName name="com.jfoenix.controls.JFXButton"/>
-<fullyQualifiedTypeName name="dataaccess.BookDao"/>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="dataAccess.DBBookWriter"/>
-<fullyQualifiedTypeName name="business.BookCopy"/>
-<fullyQualifiedTypeName name="javafx.scene.control.PasswordField"/>
-<fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
-<fullyQualifiedTypeName name="javafx.scene.control.Button"/>
-<fullyQualifiedTypeName name="javafx.geometry.Insets"/>
-<fullyQualifiedTypeName name="javafx.fxml.FXML"/>
 <fullyQualifiedTypeName name="com.jfoenix.controls.JFXTextField"/>
 <fullyQualifiedTypeName name="dataAccess.DaoImpl"/>
 <fullyQualifiedTypeName name="business.Administrator"/>
@@ -29,7 +15,6 @@
 <fullyQualifiedTypeName name="problem3.MallardDuck"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="classwork.City"/>
-<fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
 <fullyQualifiedTypeName name="classwork.calculator.Calculator"/>
 <fullyQualifiedTypeName name="problem3.FlyWithWings"/>
 <fullyQualifiedTypeName name="problem3.QuackBehavior"/>
@@ -38,7 +23,6 @@
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="labs.problem1.MyClass"/>
 <fullyQualifiedTypeName name="java.util.function.Supplier"/>
 <fullyQualifiedTypeName name="labs.problem2.InnerClass"/>
@@ -48,16 +32,32 @@
 <fullyQualifiedTypeName name="labs.problem4.ProductPriceComparator"/>
 <fullyQualifiedTypeName name="java.lang.Process"/>
 <fullyQualifiedTypeName name="labs.problem4.b.Product"/>
-<fullyQualifiedTypeName name="java.util.Comparator"/>
-<fullyQualifiedTypeName name="java.util.function.Predicate"/>
 <fullyQualifiedTypeName name="labs.problem4.Product"/>
 <fullyQualifiedTypeName name="ProductComparator"/>
-<fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="java.util.stream.IntStream"/>
-<fullyQualifiedTypeName name="java.util.stream.Stream"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="playground.constructorreference.Person"/>
+<fullyQualifiedTypeName name="java.util.function.BiFunction"/>
+<fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+<fullyQualifiedTypeName name="playground.constructorreference.TriFunction"/>
+<fullyQualifiedTypeName name="java.util.stream.Stream"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="labs.problem3.GoodSolution"/>
+<fullyQualifiedTypeName name="labs.problem3.BetterSolution"/>
+<fullyQualifiedTypeName name="java.util.function.Predicate"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.util.stream.IntStream"/>
+<fullyQualifiedTypeName name="java.util.function.Function"/>
+<fullyQualifiedTypeName name="labs.problem7.a.Employee"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="labs.problem7.b.TriFunction"/>
+<fullyQualifiedTypeName name="labs.problem7.b.Employee"/>
+<fullyQualifiedTypeName name="java.util.stream.Collector"/>
+<fullyQualifiedTypeName name="labs.problem8.Transaction"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 </qualifiedTypeNameHistroy>

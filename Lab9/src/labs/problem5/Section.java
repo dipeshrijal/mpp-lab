@@ -4,10 +4,11 @@ import java.util.Arrays;
 import java.util.stream.Stream;
 
 public class Section {
-
 	public static void main(String[] args) {
 		streamSection(nextStream(), 2, 4).forEach(System.out::println);
+		System.out.println("second call");
 		streamSection(nextStream(), 3, 3).forEach(System.out::println);
+		System.out.println("third call");
 		streamSection(nextStream(), 5, 8).forEach(System.out::println);
 	}
 
