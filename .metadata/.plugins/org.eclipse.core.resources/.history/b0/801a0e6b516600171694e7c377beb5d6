@@ -1,8 +1,0 @@
-package classwork.calculator;
-
-@FunctionalInterface
-public interface Calculator {
-	
-	public double calculate(double x, double y);
-
-}

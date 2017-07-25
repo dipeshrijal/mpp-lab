@@ -1,9 +1,0 @@
-package problem3;
-
-public interface CannotFly {
-
-	void fly() {
-		System.out.println("cannot fly");
-	}
-
-}

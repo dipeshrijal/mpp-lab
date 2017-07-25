@@ -1,7 +1,0 @@
-
-b) The outout is false because equals method does not check the instance to figure out whether it is from the same class or not.
-
-C) The output is false because the hashcode function is not overridden.
-
-
-d) The output is false because hash code need to be checked inside equal method.

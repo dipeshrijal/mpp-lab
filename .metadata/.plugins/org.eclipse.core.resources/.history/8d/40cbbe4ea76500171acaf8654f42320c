@@ -1,9 +1,0 @@
-package problem3;
-
-public interface FlyWithWings {
-
-	public void fly() {
-		System.out.println("Fly with wings");
-	}
-
-}

@@ -7,6 +7,13 @@ import java.util.stream.Stream;
 public class SquareValueOfOdd {
 
 	public static void main(String[] args) {
+		
+		
+		List<Integer> numbers1 = Arrays.asList(1,2,3,4,5);
+		
+		int summ = numbers1.stream().map(a -> a * a).reduce(0,Integer::sum);
+		
+		System.out.println(summ);	
 
 		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
 
